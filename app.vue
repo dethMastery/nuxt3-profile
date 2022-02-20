@@ -1,6 +1,15 @@
 <template>
     <div id="app">
-        hello
+        <!-- Part 1 -->
+        <div id="container-1">
+            <div class="text-container">
+                <h1>
+                    
+                </h1>
+            </div>
+
+            <div class="overlay"></div>
+        </div>
     </div>
 </template>
 
@@ -10,10 +19,6 @@
 </style>
 
 <script setup>
-import AOS from 'aos';
-
-AOS.init();
-
 useMeta({
   title: 'Suphakit P. | detzz.in.th',
   meta: [

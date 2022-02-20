@@ -19,6 +19,7 @@
 <style>
 @import url(https://unpkg.com/aos@next/dist/aos.css);
 @import url(./styles/style.css);
+@import url(./styles/animate.css);
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@300&display=swap');
 </style>
 

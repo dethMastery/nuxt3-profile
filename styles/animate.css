@@ -1,0 +1,10 @@
+@keyframes movein{
+    from {
+        padding: 2rem;
+        opacity: 0;
+    }
+    to {
+        padding: 0;
+        opacity: 100%;
+    }
+}

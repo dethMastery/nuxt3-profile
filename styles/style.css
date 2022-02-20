@@ -6,6 +6,10 @@ html {
     scroll-behavior: smooth;
 }
 
+html, body, a, h1, h2, h3, h4, h5, div, p, span {
+    font-family: 'IBM Plex Sans Thai', sans-serif;
+}
+
 body {
     background-color: #011D3F;
     color: whitesmoke;
@@ -27,17 +31,22 @@ body {
     background: url(../back1.jpeg);
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
-    
-    display: flex;
+    background-repeat: no-repeat;    
 }
 
 .overlay {
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#container-1 .overlay {
+    display: flex;
+    vertical-align: middle;
+    align-items: center;
+    text-align: center;
 }
 
 .text-container {
-
+    width: 100%;
 }

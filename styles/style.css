@@ -23,10 +23,12 @@ body {
     padding: 0 !important;
 }
 
-#container-1 {
+.contain {
     width: 100% !important;
     height: 100vh;
+}
 
+#container-1 {
     background-color: #023B80;
     background: url(../back1.jpeg);
     background-size: cover;
@@ -57,4 +59,8 @@ body {
 
 .text-container h3 {
     animation: movein 1s;
+}
+
+#container-2 {
+    background-color: #023B80;
 }

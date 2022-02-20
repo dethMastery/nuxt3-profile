@@ -7,5 +7,8 @@
   },
   "devDependencies": {
     "nuxt3": "latest"
+  },
+  "dependencies": {
+    "aos": "^3.0.0-beta.6"
   }
 }

@@ -5,10 +5,15 @@
 </template>
 
 <style>
+@import url(https://unpkg.com/aos@next/dist/aos.css);
 @import url(./styles/style.css);
 </style>
 
 <script setup>
+import AOS from 'aos';
+
+AOS.init();
+
 useMeta({
   title: 'Suphakit P. | detzz.in.th',
   meta: [

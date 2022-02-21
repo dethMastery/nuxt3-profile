@@ -23,17 +23,10 @@ body {
     padding: 0 !important;
 }
 
+/* Global Environment */
 .contain {
     width: 100% !important;
     height: 100vh;
-}
-
-#container-1 {
-    background-color: #023B80;
-    background: url(../back1.jpeg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;    
 }
 
 .overlay {
@@ -42,26 +35,37 @@ body {
     background-color: rgba(0, 0, 0, 0.5);
 }
 
-#container-1 .overlay {
+.text-container {
+    width: 100%;
+}
+
+
+/* Heading Part */
+#heading {
+    background-color: #023B80;
+    background: url(../back1.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;    
+}
+
+#heading .overlay {
     display: flex;
     vertical-align: middle;
     align-items: center;
     text-align: center;
 }
 
-.text-container {
-    width: 100%;
-}
-
-.text-container h1 {
+#heading .text-container h1 {
     animation: head 1s;
     letter-spacing: 0.5rem;
 }
 
-.text-container h3 {
+#heading .text-container h3 {
     animation: bottom 1s;
 }
 
-#container-2 {
+/* About Part */
+#about {
     background-color: #023B80;
 }

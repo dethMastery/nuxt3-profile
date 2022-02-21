@@ -55,12 +55,12 @@ body {
     text-align: center;
 }
 
-#heading .text-container h1 {
+#heading .text-cont h1 {
     animation: head 1s;
     letter-spacing: 0.5rem;
 }
 
-#heading .text-container h3 {
+#heading .text-cont h3 {
     animation: bottom 1s;
 }
 

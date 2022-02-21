@@ -115,17 +115,19 @@ body {
     width: 100%;
     height: auto;
 
+    border-radius: 1rem;
+
     text-align: center;
 }
 
 #about .ab-cont .left .img-cont img {
-    width: 400px;
-    height: auto;
+    max-width: 350px;
+    border-radius: 1rem;
 }
 
 #about .ab-cont .right {
     width: 50%;
     height: 100%;
 
-    background-color: #02316C;
+    background-color: #0352B3;
 }

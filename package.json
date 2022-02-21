@@ -8,5 +8,7 @@
   "devDependencies": {
     "nuxt3": "latest"
   },
-  "dependencies": {}
+  "dependencies": {
+    "axios": "^0.26.0"
+  }
 }

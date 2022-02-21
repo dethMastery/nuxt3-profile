@@ -4,11 +4,14 @@
         <div id="heading" class="contain">
             <div class="overlay">
                 <div class="text-container">
-                    <h1>
+                    <!-- <h1>
                         Suphakit Pinyoworapot
+                    </h1>-->
+                    <h1>
+                        {{ resp[0].name }} {{ resp[0].sName }}
                     </h1>
                     <h3>
-                        Front-End Dev. && Artist!
+                        {{ resp[0].quote }}
                     </h3>
                 </div>
             </div>
@@ -42,4 +45,8 @@ useMeta({
       }
   ]
 });
+
+let api = "https://api.detzz.in.th/profile";
+let {data: resp} = await useFetch(api);
+
 </script>

@@ -16,18 +16,20 @@
 
         <!-- About -->
         <div id="about" class="contain">
-            <h2 class="heading">
+            <h1 class="heading">
                 <div>
                     <b>
                         About Me
                     </b>
                 </div>
-            </h2>
+            </h1>
 
             <div class="ab-cont">
                 <div class="left">
                     <div class="img-cont">
-                        <img :src="resp[0].proPic" alt="Profile Picture">
+                        <span>
+                            <img :src="resp[0].proPic" alt="Profile Picture">
+                        </span>
                     </div>
                 </div>
 

@@ -119,9 +119,20 @@ body {
     text-align: center;
 }
 
-#about .ab-cont .left .img-cont img {
+#about .ab-cont .left .img-cont span {
+    width: 350px;
+    height: 350px;
+    border-radius: 1rem;
+}
+
+#about .ab-cont .left .img-cont span img {
     max-width: 350px;
     border-radius: 1rem;
+    transition: transform .2s;
+}
+
+#about .ab-cont .left .img-cont span img:hover {
+    transform: scale(1.2);
 }
 
 #about .ab-cont .right {
@@ -138,7 +149,7 @@ body {
 #about .ab-cont .right .text-cont {
     width: 80%;
     text-align: left;
-    padding-left: 2rem !important;
+    padding-left: 1rem !important;
     font-size: 22px;
 }
 

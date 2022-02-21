@@ -1,7 +1,7 @@
 <template>
     <div id="app">
         <!-- Header -->
-        <div id="container-1" class="contain">
+        <div id="heading" class="contain">
             <div class="overlay">
                 <div class="text-container">
                     <h1>
@@ -15,7 +15,7 @@
         </div>
 
         <!-- About -->
-        <div id="container-2" class="contain">
+        <div id="about" class="contain">
             
         </div>
     </div>

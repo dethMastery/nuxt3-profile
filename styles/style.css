@@ -54,11 +54,12 @@ body {
 }
 
 .text-container h1 {
-    animation: movein 1s;
+    animation: head 1s;
+    letter-spacing: 0.5rem;
 }
 
 .text-container h3 {
-    animation: movein 1s;
+    animation: bottom 1s;
 }
 
 #container-2 {

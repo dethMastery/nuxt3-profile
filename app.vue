@@ -16,7 +16,11 @@
 
         <!-- About -->
         <div id="about" class="contain">
-            
+            <h2 class="heading">
+                <span>
+                    About Me
+                </span>
+            </h2>
         </div>
     </div>
 </template>

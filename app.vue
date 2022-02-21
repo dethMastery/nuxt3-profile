@@ -3,7 +3,7 @@
         <!-- Header -->
         <div id="heading" class="contain">
             <div class="overlay">
-                <div class="text-container">
+                <div class="text-cont">
                     <h1>
                         {{ resp[0].name }} {{ resp[0].sName }}
                     </h1>
@@ -32,7 +32,9 @@
                 </div>
 
                 <div class="right">
-                    
+                    <div class="text-cont">
+
+                    </div>
                 </div>
             </div>
         </div>

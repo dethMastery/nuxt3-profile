@@ -4,9 +4,6 @@
         <div id="heading" class="contain">
             <div class="overlay">
                 <div class="text-container">
-                    <!-- <h1>
-                        Suphakit Pinyoworapot
-                    </h1>-->
                     <h1>
                         {{ resp[0].name }} {{ resp[0].sName }}
                     </h1>
@@ -20,10 +17,24 @@
         <!-- About -->
         <div id="about" class="contain">
             <h2 class="heading">
-                <span>
-                    About Me
-                </span>
+                <div>
+                    <b>
+                        About Me
+                    </b>
+                </div>
             </h2>
+
+            <div class="ab-cont">
+                <div class="left">
+                    <div class="img-cont">
+                        <img :src="resp[0].proPic" alt="Profile Picture">
+                    </div>
+                </div>
+
+                <div class="right">
+                    
+                </div>
+            </div>
         </div>
     </div>
 </template>
@@ -32,6 +43,7 @@
 @import url(https://unpkg.com/aos@next/dist/aos.css);
 @import url(./styles/style.css);
 @import url(./styles/animate.css);
+@import url(./styles/mobile.css);
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@300&display=swap');
 </style>
 

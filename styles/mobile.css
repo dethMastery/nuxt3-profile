@@ -1,0 +1,26 @@
+@media only screen and (max-width: 800px) {
+    #about .ab-cont {
+        width: 100%;
+        height: 85vh;
+    
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    
+        background-color: #023575;
+    }
+
+    #about .ab-cont .left {
+        width: 100% !important;
+        height: auto;
+    
+        background-color: #02316C;
+    }
+    
+    #about .ab-cont .right {
+        width: 100%;
+        height: 100%;
+    
+        background-color: #02316C;
+    }   
+}

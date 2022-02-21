@@ -39,7 +39,6 @@ body {
     width: 100%;
 }
 
-
 /* Heading Part */
 #heading {
     background-color: #023B80;
@@ -129,5 +128,45 @@ body {
     width: 50%;
     height: 100%;
 
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
     background-color: #0352B3;
+}
+
+#about .ab-cont .right .text-cont {
+    width: 80%;
+    text-align: left;
+    padding-left: 2rem !important;
+    font-size: 22px;
+}
+
+#about .ab-cont .right .text-cont h1{
+    margin-bottom: 0.5rem;
+}
+
+#about .ab-cont .right .text-cont .desc h1 {
+    font-size: 35px;
+}
+
+#about .ab-cont .right .text-cont .desc p {
+    margin-bottom: .1rem;
+    font-size: 20px;
+}
+
+#about .ab-cont .right .text-cont .basic-info h2 {
+    font-size: 28px;
+    margin-top: 0;
+    margin-bottom: .1rem;
+}
+
+#about .ab-cont .right .text-cont .basic-info ul{
+    padding-left: 2.5rem;
+    margin-top: 0.25rem;
+    font-size: 20px;
+}
+
+#about .ab-cont .right .text-cont .basic-info ul li ul{
+    padding-left: 1.5rem;
 }

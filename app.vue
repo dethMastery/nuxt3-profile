@@ -33,7 +33,36 @@
 
                 <div class="right">
                     <div class="text-cont">
-
+                        <div class="desc">
+                            <h1>
+                                {{resp[0].desc}}
+                            </h1>
+                            <p>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{resp[0].subDesc}}
+                            </p>
+                        </div>
+                        <br>
+                        <div class="basic-info">
+                            <h2>
+                                <u>Basic Info</u> >
+                            </h2>
+                            <ul>
+                                <li>
+                                    <b>Name</b> : {{resp[0].name}} {{resp[0].sName}}                            
+                                </li>
+                                <li>
+                                    <b>Age</b> : {{age}}
+                                </li>
+                                <li>
+                                    <b>Education Profile</b> : 
+                                    <ul>
+                                        <li v-for="edu in resp[0].Education.reverse()" :key="edu.id">
+                                            {{ edu.grade }} :  {{ edu.class }} {{ edu.school }} [{{edu.year}}]
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -62,5 +91,12 @@ useMeta({
 
 let api = "https://api.detzz.in.th/profile";
 let {data: resp} = await useFetch(api);
+
+let bday = 1024074000000;
+
+let today = new Date().getFullYear();
+let birth = new Date(bday).getFullYear();
+let age = today - birth;
+
 
 </script>

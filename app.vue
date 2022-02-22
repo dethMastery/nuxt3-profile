@@ -55,14 +55,14 @@
                                 <li>
                                     <b>Age</b> : {{age}}
                                 </li>
-                                <li>
+                                <!-- <li>
                                     <b>Education Profile</b> : 
                                     <ul>
                                         <li v-for="edu in resp[0].Education.reverse()" :key="edu.id">
                                             {{ edu.grade }} :  {{ edu.class }} {{ edu.school }} [{{edu.year}}]
                                         </li>
                                     </ul>
-                                </li>
+                                </li> -->
                             </ul>
                         </div>
                     </div>
@@ -72,7 +72,37 @@
 
         <!-- Work Status-->
         <div id="work" class="contain">
-            
+            <h1 class="heading">
+                <div>
+                    Work Status
+                </div>
+            </h1>
+
+            <div class="git-stat">
+                <h3>
+                    Git Commit : 
+                </h3>
+                <img :src="resp[0].gCommit" alt="github Commit">
+            </div>
+
+            <div class="feature">
+                <h3>
+                    Featured Repository :
+                </h3>
+                <div class="c-cont">
+                    <div v-for="repp in resp[0].fRepo" :key="repp.id" class="card">
+                        <div class="card-header">
+                            {{repp.name}}
+                        </div>
+                        <div class="card-body">
+                            {{repp.desp}}
+                        </div>
+                        <div class="card-footer">
+                            {{repp.lang}} &middot; <a :href="repp.link" class="button">Repo Link ></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </template>

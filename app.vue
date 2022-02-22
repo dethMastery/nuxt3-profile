@@ -72,7 +72,7 @@
 
         <!-- Work Status-->
         <div id="work" class="contain">
-
+            
         </div>
     </div>
 </template>

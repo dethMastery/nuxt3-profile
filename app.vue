@@ -55,14 +55,14 @@
                                 <li>
                                     <b>Age</b> : {{age}}
                                 </li>
-                                <!-- <li>
+                                <li class="eduProf">
                                     <b>Education Profile</b> : 
                                     <ul>
                                         <li v-for="edu in resp[0].Education.reverse()" :key="edu.id">
                                             {{ edu.grade }} :  {{ edu.class }} {{ edu.school }} [{{edu.year}}]
                                         </li>
                                     </ul>
-                                </li> -->
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -104,6 +104,8 @@
                 </div>
             </div>
         </div>
+
+
     </div>
 </template>
 
@@ -134,6 +136,5 @@ let bday = 1024074000000;
 let today = new Date().getFullYear();
 let birth = new Date(bday).getFullYear();
 let age = today - birth;
-
 
 </script>

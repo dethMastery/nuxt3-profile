@@ -1,7 +1,12 @@
 @media only screen and (max-width: 850px) {
+    /* About Part */
+    #about {
+        height: auto !important;
+    }
+
     #about .ab-cont {
         width: 100%;
-        height: 85vh;
+        height: auto;
     
         display: flex;
         flex-direction: column;
@@ -20,5 +25,29 @@
     #about .ab-cont .right {
         width: 100%;
         height: 100%;
-    }   
+    }
+
+    #about .text-cont {
+        padding-bottom: 2rem;
+    }
+
+    /* Work */
+    #work .c-cont .card {
+        width: 18rem;
+        height: 13rem;
+        margin-bottom: 1rem;
+    }
+
+    #work .c-cont {
+        width: 80%;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0;
+    
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
 }

@@ -74,16 +74,9 @@
         <div id="work" class="contain">
             <h1 class="heading">
                 <div>
-                    Work Status
+                    My Works
                 </div>
             </h1>
-
-            <div class="git-stat">
-                <h3>
-                    Git Commit : 
-                </h3>
-                <img :src="resp[0].gCommit" alt="github Commit">
-            </div>
 
             <div class="feature">
                 <h3>

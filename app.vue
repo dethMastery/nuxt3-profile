@@ -158,6 +158,11 @@
                 </div>
             </div>
         </div>
+
+        <!-- Certifcate -->
+        <div id="cert" class="contain">
+            
+        </div>
     </div>
 </template>
 

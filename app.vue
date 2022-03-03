@@ -121,6 +121,43 @@
         </div>
 
         <!-- Work History -->
+        <div id="history" class="contain">
+            <h1 class="heading">
+                <div>
+                    Work experience
+                </div>
+            </h1>
+            <div class="c-cont">
+                <div class="card" v-for="wxp in resp[0].Work" :key="wxp.id">
+                    <div class="bg" :style="'background: url('+wxp.img+')'">
+                        <div class="overlay">
+                            <div class="img">
+                                <img :src="wxp.img" alt="logo">
+                            </div>
+                            <div class="text">
+                                <h3>
+                                    {{wxp.class}} @ {{wxp.name}}
+                                </h3>
+
+                                <p class="sub">
+                                    {{wxp.duration}}
+                                </p>
+
+                                <h2>
+                                    Status : 
+                                    <span v-if="wxp.status == 1">
+                                        Working
+                                    </span>
+                                    <span v-else-if="wxp.status == 0">
+                                        Fired
+                                    </span>
+                                </h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </template>
 

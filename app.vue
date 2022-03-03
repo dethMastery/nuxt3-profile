@@ -79,13 +79,13 @@
             </h1>
 
             <div class="c-cont">
-                <div class="card">
+                <div class="card" v-for="skl in resp[0].skill" :key="skl.id">
                     <div class="imghol">
-                        <img src="logo/html.svg" alt="Avatar">
+                        <img :src="skl.path" alt="img">
                     </div>
                     <div class="container">
-                        <h4><b>John Doe</b></h4>
-                        <p>Architect & Engineer</p>
+                        <h3><b>{{skl.name}}</b></h3>
+                        <p>{{skl.duration}}</p>
                     </div>
                 </div>                
             </div>

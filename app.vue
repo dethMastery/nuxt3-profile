@@ -59,7 +59,7 @@
                                     <b>Education Profile</b> : 
                                     <ul>
                                         <li v-for="edu in resp[0].Education.reverse()" :key="edu.id">
-                                            {{ edu.grade }} :  {{ edu.class }} {{ edu.school }} [{{edu.year}}]
+                                            {{ edu.school }} [{{edu.year}}]
                                         </li>
                                     </ul>
                                 </li>
@@ -70,11 +70,32 @@
             </div>
         </div>
 
+        <!-- Skill -->
+        <div id="skill" class="contain">
+            <h1 class="heading">
+                <div>
+                    My Skills
+                </div>
+            </h1>
+
+            <div class="c-cont">
+                <div class="card">
+                    <div class="imghol">
+                        <img src="logo/html.svg" alt="Avatar">
+                    </div>
+                    <div class="container">
+                        <h4><b>John Doe</b></h4>
+                        <p>Architect & Engineer</p>
+                    </div>
+                </div>                
+            </div>
+        </div>
+
         <!-- Work Status-->
         <div id="work" class="contain">
             <h1 class="heading">
                 <div>
-                    My Works
+                    My Worked Repository
                 </div>
             </h1>
 
@@ -82,6 +103,7 @@
                 <h3>
                     Featured Repository :
                 </h3>
+                <br>
                 <div class="c-cont">
                     <div v-for="repp in resp[0].fRepo" :key="repp.id" class="card">
                         <div class="card-header">
@@ -98,12 +120,11 @@
             </div>
         </div>
 
-
+        <!-- Work History -->
     </div>
 </template>
 
 <style>
-@import url(https://unpkg.com/aos@next/dist/aos.css);
 @import url(./styles/style.css);
 @import url(./styles/animate.css);
 @import url(./styles/mobile.css);

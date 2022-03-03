@@ -182,6 +182,79 @@ body {
     padding-left: 1.5rem;
 }
 
+/* Skill */
+#skill {
+    background-color: #02428F !important;
+    color: #1f2f2f;
+}
+
+#skill .heading {
+    width: 100%;
+    height: 15vh;
+    margin: 0;
+
+    display: flex;
+    vertical-align: middle;
+    align-items: center;
+    text-align: center;
+
+    color: whitesmoke;
+}
+
+#skill .heading div {
+    width: 100%;
+}
+
+#skill .c-cont {
+    display: flex;
+}
+
+#skill .c-cont {
+    width: 80%;
+    height: 20rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+#skill .c-cont .card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    background-color: whitesmoke;
+    height: 20rem;
+    width: 15rem;
+
+    border-radius: 1rem;
+}
+
+#skill .c-cont .card .imghol {
+    height: 10rem;
+    width: 100%;
+    padding-top: .5rem;
+    padding-bottom: 1rem !important;
+}
+
+#skill .c-cont .card .imghol img {
+    height: 100%;
+    width: auto;
+    padding-top: 1rem;
+    padding-bottom: 0 !important;
+}
+
+#skill .c-cont .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+  
+#skill .c-cont .container {
+    padding-top: 0 !important;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
 /* Work */
 #work {
     width: 100%;

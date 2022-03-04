@@ -161,7 +161,22 @@
 
         <!-- Certifcate -->
         <div id="cert" class="contain">
-            
+            <h1 class="heading">
+                <div>
+                    Certificate
+                </div>
+            </h1>
+
+            <div class="c-cont">
+                <div v-for="cert in resp[0].cert " :key="cert.id">
+                    <div v-if="cert.name != null">
+                        sry boi im lazy now~
+                    </div>
+                    <div v-else>
+                        nothing to show here now..
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </template>

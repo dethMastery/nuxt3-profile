@@ -178,6 +178,11 @@
                 </div>
             </div>
         </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            
+        </div>
     </div>
 </template>
 

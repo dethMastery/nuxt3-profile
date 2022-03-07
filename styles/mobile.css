@@ -191,10 +191,33 @@
     #cert .c-cont {
         width: 95% !important;
         height: auto;
+        padding-bottom: 3rem;
     }
 
     /* Footer */
+    #footer {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    #footer .cont {
+        width: 100%;
+        height: auto;
     
+        display: flex;
+        align-items: top;
+        text-align: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    #footer .cont div {
+        width: 100%;
+    }
+
+    #footer .address, #footer .menu, #footer .social {
+        padding-left: 0;
+    }
 }
 
 @media only screen and (max-width: 686px) {

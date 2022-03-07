@@ -180,8 +180,45 @@
         </div>
 
         <!-- Footer -->
-        <div class="footer">
-            
+        <div id="footer">
+            <div class="cont">
+                <div class="about">
+                    <ul>
+                        <li>Address :</li>
+                        <li v-for="add in resp[0].footer[0].Address" :key="add.id">
+                            {{add.content}}
+                        </li>
+                        <a :href="'tel:' + resp[0].footer[0].Tel">
+                            <li>
+                                tel: {{resp[0].footer[0].shTel}}
+                            </li>
+                        </a>
+                        <a :href="'mailto:' + resp[0].footer[0].mail">
+                            <li>
+                                e-mail: {{resp[0].footer[0].mail}}
+                            </li>
+                        </a>
+                    </ul>
+                </div>
+                <div class="menu">
+                    <ul>
+                        <a v-for="menu in resp[0].footer[0].menu" :key="menu.id" :href="menu.link">
+                            <li>
+                                {{menu.name}}
+                            </li>
+                        </a>
+                    </ul>
+                </div>
+                <div class="link">
+                    <ul>
+                        <a v-for="social in resp[0].footer[0].social" :key="social.id" :href="social.link">
+                            <li>
+                                <i :class="social.icon"></i> {{social.text}}
+                            </li>
+                        </a>
+                    </ul>
+                </div>
+            </div>
         </div>
     </div>
 </template>

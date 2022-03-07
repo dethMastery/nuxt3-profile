@@ -186,7 +186,10 @@
                     <ul>
                         <li>Address :</li>
                         <li v-for="add in resp[0].footer[0].Address" :key="add.id">
-                            {{add.content}}
+                            &nbsp;&nbsp;&nbsp;{{add.content}}
+                        </li>
+                        <li>
+                            &nbsp;
                         </li>
                         <a :href="'tel:' + resp[0].footer[0].Tel">
                             <li>

@@ -506,6 +506,10 @@ body {
     justify-content: center;
 }
 
+#footer .cont div {
+    width: 50%;
+}
+
 #footer ul {
     list-style: none;
 }

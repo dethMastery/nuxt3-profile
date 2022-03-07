@@ -205,18 +205,24 @@
                 </div>
                 <div class="menu">
                     <ul>
+                        <li>
+                            Menu :
+                        </li>
                         <a v-for="menu in resp[0].footer[0].menu" :key="menu.id" :href="menu.link">
                             <li>
-                                {{menu.name}}
+                                &nbsp;&nbsp;{{menu.name}}
                             </li>
                         </a>
                     </ul>
                 </div>
                 <div class="link">
                     <ul>
+                        <li>
+                            Social :
+                        </li>
                         <a v-for="social in resp[0].footer[0].social" :key="social.id" :href="social.link">
                             <li>
-                                <i :class="social.icon"></i> {{social.text}}
+                                &nbsp;&nbsp;<i :class="social.icon"></i> {{social.text}}
                             </li>
                         </a>
                     </ul>

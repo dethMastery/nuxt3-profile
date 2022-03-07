@@ -185,8 +185,8 @@
                 <div class="about">
                     <ul>
                         <li>Address :</li>
-                        <li v-for="add in resp[0].footer[0].Address" :key="add.id">
-                            &nbsp;&nbsp;&nbsp;{{add.content}}
+                        <li v-for="add in resp[0].footer[0].Address" :key="add.id" class="address">
+                            {{add.content}}
                         </li>
                         <li>
                             &nbsp;
@@ -209,8 +209,8 @@
                             Menu :
                         </li>
                         <a v-for="menu in resp[0].footer[0].menu" :key="menu.id" :href="menu.link">
-                            <li>
-                                &nbsp;&nbsp;{{menu.name}}
+                            <li class="menu">
+                                {{menu.name}}
                             </li>
                         </a>
                     </ul>
@@ -221,8 +221,8 @@
                             Social :
                         </li>
                         <a v-for="social in resp[0].footer[0].social" :key="social.id" :href="social.link">
-                            <li>
-                                &nbsp;&nbsp;<i :class="social.icon"></i> {{social.text}}
+                            <li class="social">
+                                <i :class="social.icon"></i> {{social.text}}
                             </li>
                         </a>
                     </ul>
@@ -233,9 +233,9 @@
 </template>
 
 <style>
-@import url(./styles/style.css);
-@import url(./styles/animate.css);
-@import url(./styles/mobile.css);
+@import url(../styles/style.css);
+@import url(../styles/animate.css);
+@import url(../styles/mobile.css);
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@300&display=swap');
 </style>
 

@@ -522,3 +522,12 @@ body {
     color: rgb(202, 202, 202);
     text-decoration: none;
 }
+
+#footer .address, #footer .menu, #footer .social {
+    padding-left: 1rem;
+}
+
+#footer .menu, #footer .social {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}

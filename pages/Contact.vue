@@ -14,13 +14,11 @@
                         Contact
                     </u>
                 </h2>
-                <!-- <p v-for="donate in resp[0].donation" :key="donate.id">
-                    {{donate.name}} : {{donate.target}}
+                <p v-for="contact in resp[0].contact" :key="contact.id">
+                    <a :href="contact.link">
+                        <img :src="'https://img.shields.io/static/v1?label='+contact.label+'message='+contact.message+'&color='+contact.color+'&style='+contact.style" alt="linkbox">
+                    </a>
                 </p>
-                <br>
-                <span>
-                    {{resp[0].donation[0].uName}}
-                </span> -->
             </div>
         </div>
     </div>

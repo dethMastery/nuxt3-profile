@@ -16,7 +16,7 @@
                 </h2>
                 <p v-for="contact in resp[0].contact" :key="contact.id">
                     <a :href="contact.link">
-                        <img :src="'https://img.shields.io/static/v1?label='+contact.label+'message='+contact.message+'&color='+contact.color+'&style='+contact.style" alt="linkbox">
+                        <img :src="'https://img.shields.io/static/v1?label='+contact.label+'&message='+contact.message+'&color='+contact.color+'&style='+contact.style" alt="linkbox">
                     </a>
                 </p>
             </div>
